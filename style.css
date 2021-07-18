@@ -62,13 +62,31 @@ button {
   margin-top: 0.4rem;
 }
 
+input:focus {
+  outline: none;
+  border: 3px solid hsl(248, 32%, 49%);
+}
+
 button {
   background-color: hsl(154, 59%, 51%);
   color: #fff;
+}
+
+button:hover {
+  background-color: #fff;
+  color: hsl(154, 59%, 51%);
+  cursor: pointer;
 }
 
 #second p {
   margin-top: 0.4rem;
   font-size: 10px;
   text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
